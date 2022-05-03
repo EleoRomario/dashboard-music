@@ -1,0 +1,47 @@
+.sidebar__container {
+	background-color: $color_bg_alt;
+	border-radius: 2rem;
+	width: $width_sidebar;
+	height: calc(100vh - 4rem);
+	margin: 2rem;
+	padding: 2rem;
+	position: fixed;
+}
+.sidebar__header {
+	margin-bottom: 2rem;
+	&__avatar img {
+		width: 4rem;
+		height: 4rem;
+	}
+	&__name {
+		font-size: 0.8rem;
+		color: $color_text;
+		font-weight: 200;
+		.user__name {
+			display: block;
+			font-size: 1rem;
+			font-weight: 400;
+		}
+	}
+}
+.nav__menu {
+	color: $color_text;
+	margin: 1rem 0;
+	.nav__title {
+		font-weight: 600;
+	}
+	.nav__list {
+		.nav__item {
+			margin: 1rem 0;
+			font-size: 1rem;
+			color: $color_text_alt;
+			&:hover {
+				cursor: pointer;
+				color: $color_text;
+			}
+			&.liked {
+				color: $color_red;
+			}
+		}
+	}
+}
