@@ -1,0 +1,78 @@
+.music__container {
+	margin-top: 2rem;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	background-color: $color_bg_alt;
+}
+.music__image {
+	width: 100%;
+	height: 10rem;
+	background-color: $color_bg;
+	border-radius: 1rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.music__player {
+	&__header {
+		text-align: center;
+		margin: 1rem 0;
+		&__title {
+			color: $color_text;
+		}
+		&__author {
+			color: $color_text_alt;
+			font-size: 0.7rem;
+		}
+	}
+	&__bar-progress {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 2rem;
+		.bar__progress {
+			height: 5px;
+			width: 100%;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+		.bar__toggle {
+			position: absolute;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+			background-color: #e74c3c;
+			border: 4px solid #fff;
+		}
+	}
+	&__time {
+		display: flex;
+		justify-content: space-between;
+		color: $color_text_alt;
+		font-size: 0.7rem;
+	}
+	&__controls {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.btn {
+      &__random, &__repeat {
+        cursor: pointer;
+        color: $color_text_alt;
+        &:hover{
+          color: $color_text;
+        }
+			}
+      &__pre, &__play, &__next{
+        cursor: pointer;
+        color: $color_text;
+        &:hover{
+          color: #e74c3c;
+        }
+      }
+      &__play{
+        font-size: 1.5rem;      
+      }
+		}
+	}
+}

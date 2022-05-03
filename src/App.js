@@ -1,5 +1,5 @@
 import { Header } from "./components/ui/Header";
-import { TopArtists } from "./components/ui/TopArtists";
+import { SidebarArtists } from "./components/ui/SidebarArtists";
 import { AppRouter } from "./routers/AppRouter";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 		<>
 			<AppRouter />
 			<Header/>
-			<TopArtists/>
+			<SidebarArtists/>
 		</>
 	);
 }

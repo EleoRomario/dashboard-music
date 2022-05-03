@@ -1,10 +1,11 @@
 import { getArtist } from "../../selectors/getArtist"
 import { ItemArtist } from "./ItemArtist"
+import { MusicPlayer } from "./MusicPlayer";
 
-export const TopArtists = () => {
+export const SidebarArtists = () => {
   const artists = getArtist();
   return (
-    <div className="top-artists">
+    <div className="sidebar-right">
       <div className="top-artists__header">
         <h4 className="title">Top Artists</h4>
         <div className="more">
@@ -16,6 +17,7 @@ export const TopArtists = () => {
         <ItemArtist key={artist.id} artist={artist} />
       ))}
       </div>
+      <MusicPlayer/>
     </div>
   )
 }

@@ -1,8 +1,7 @@
-
-export const ItemArtist = ({artist}) => {
-  console.log(artist);
-  const { name,image, followers, listenes } = artist;
-  return (
+export const ItemArtist = ({ artist }) => {
+	console.log(artist);
+	const { name, image, followers, listenes } = artist;
+	return (
 		<>
 			<div className="item-artist">
 				<img
@@ -23,5 +22,5 @@ export const ItemArtist = ({artist}) => {
 				</div>
 			</div>
 		</>
-  );
-}
+	);
+};

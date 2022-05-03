@@ -1,12 +1,13 @@
-.top-artists {
+.sidebar-right {
 	width: $width_sidebar;
 	position: absolute;
 	right: 2rem;
+  padding: 1rem 0;
 	top: calc(2rem + #{$height_header});
 	display: flex;
 	flex-direction: column;
-	margin: 2rem 0;
-	&__header {
+	max-height: calc(100vh - #{$height_header} - 4rem);
+	.top-artists__header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -36,14 +37,28 @@
 	}
 	&__info {
 		.name {
-			font-size: 1rem;
+			font-size: 0.8rem;
 			color: $color_text;
 			font-weight: 400;
+			display: flex;
+			align-items: center;
 			.verificate {
 				background-color: #3498db;
-				display: inline-block;
-				width: 1rem;
-				height: 1rem;
+				display: inline-flex;
+				width: 0.8rem;
+				height: 0.8rem;
+				align-items: center;
+				margin-left: 0.5rem;
+				position: relative;
+				&::after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					transform: rotate(45deg);
+					background-color: #3498db;
+					z-index: -1;
+				}
 			}
 		}
 		.followers {
