@@ -1,3 +1,11 @@
+.sidebar-container {
+	background-color: $color_bg_alt;
+	border-radius: 2rem;
+	width: $width_sidebar;
+	height: calc(100vh - 4rem);
+	padding: 2rem;
+	position: fixed;
+}
 .sidebar__header {
 	margin-bottom: 2rem;
 	&__avatar img {

@@ -15,50 +15,57 @@ a {
 body {
 	background: $color_bg;
 }
+/*=========================== SCROLL BAR ===========================*/
+::-webkit-scrollbar {
+	width: 0.6rem;
+	background-color: $color_bg_alt;
+	border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+	background-color: $color_bg;
+	border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: grayscale($color_bg);
+}
+
 // Layout
 .layout {
 	display: grid;
 	grid-auto-flow: row dense;
-	grid-template-columns: ($width_sidebar + 2rem) 3fr ($width_sidebar + 2rem);
-	grid-template-rows: 0.5fr 5fr;
-	gap: 1rem;
+	grid-template-columns: ($width_sidebar + 4rem) 2fr ($width_sidebar + 5rem);
+	grid-template-rows: $height_header 5fr;
 	grid-template-areas:
 		"sidebar-left header header"
 		"sidebar-left main sidebar-right";
 	.sidebar-left {
-		background-color: $color_bg_alt;
-		border-radius: 2rem;
-		width: $width_sidebar;
-		height: calc(100vh - 4rem);
-		margin: 2rem;
-		padding: 2rem;
-		position: fixed;
 		grid-area: sidebar-left;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding-top: 2rem;
 	}
 	.sidebar-right {
-		margin: 0 2rem;
 		display: flex;
 		flex-direction: column;
-		max-height: calc(100vh - #{$height_header} - 4rem);
 		grid-area: sidebar-right;
 	}
 	.header {
-		width: 100%;
-		position: sticky;
-		display: grid;
-		top: 0;
-		grid-template-columns: max-content 4fr max-content max-content;
-		gap: 1rem;
-		padding: 2rem 2rem 0.5rem 0;
-		align-items: center;
-		background-color: $color_bg;
 		z-index: 999;
 		grid-area: header;
+		position: sticky;
+		top: 0;
+		margin-bottom: 1rem;
+		height: $height_header;
 	}
 	.main {
+		margin-top: 1rem;
+		width: 100%;
 		grid-area: main;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
 	}
 }
 // Icons
@@ -76,6 +83,5 @@ body {
 }
 // Section
 .section {
-	width: $container;
+	width: $section;
 }
-

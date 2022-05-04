@@ -1,9 +1,11 @@
 import { Banner } from "../components/home/Banner"
+import { ListSongs } from "../components/home/ListSongs"
 
 export const Home = () => {
   return (
-    <div className="container">
+    <>
       <Banner/>
-    </div>
+      <ListSongs/>
+    </>
   )
 }

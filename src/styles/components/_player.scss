@@ -56,23 +56,26 @@
 		justify-content: space-between;
 		align-items: center;
 		.btn {
-      &__random, &__repeat {
-        cursor: pointer;
-        color: $color_text_alt;
-        &:hover{
-          color: $color_text;
-        }
+			&__random,
+			&__repeat {
+				cursor: pointer;
+				color: $color_text_alt;
+				&:hover {
+					color: $color_text;
+				}
 			}
-      &__pre, &__play, &__next{
-        cursor: pointer;
-        color: $color_text;
-        &:hover{
-          color: #e74c3c;
-        }
-      }
-      &__play{
-        font-size: 1.5rem;      
-      }
+			&__pre,
+			&__play,
+			&__next {
+				cursor: pointer;
+				color: $color_text;
+				&:hover {
+					color: #e74c3c;
+				}
+			}
+			&__play {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

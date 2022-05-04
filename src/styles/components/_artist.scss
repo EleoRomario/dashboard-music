@@ -1,19 +1,24 @@
-
-	.top-artists__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 2rem;
-		.title {
-			color: $color_text;
-			font-size: 1.2rem;
-			font-weight: 600;
-		}
-		.more {
-			font-size: 0.8rem;
-			color: $color_text_alt;
-		}
+.sidebar-right-container {
+	padding: 0 2rem;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+}
+.top-artists__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 2rem;
+	.title {
+		color: $color_text;
+		font-size: 1.2rem;
+		font-weight: 600;
 	}
+	.more {
+		font-size: 0.8rem;
+		color: $color_text_alt;
+	}
+}
 
 //  Item Artist
 
