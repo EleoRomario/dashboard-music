@@ -5,7 +5,7 @@ import { MusicPlayer } from "./MusicPlayer";
 export const SidebarArtists = () => {
   const artists = getArtist();
   return (
-    <div className="sidebar-right">
+    <>
       <div className="top-artists__header">
         <h4 className="title">Top Artists</h4>
         <div className="more">
@@ -18,6 +18,6 @@ export const SidebarArtists = () => {
       ))}
       </div>
       <MusicPlayer/>
-    </div>
+    </>
   )
 }

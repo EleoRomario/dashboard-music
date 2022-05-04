@@ -1,7 +1,6 @@
 export const Header = () => {
   return (
 		<>
-			<div className="header__container">
 				<div className="header__navegation">
 					<div className="icon">
 						<ion-icon name="chevron-back-outline"></ion-icon>
@@ -32,7 +31,6 @@ export const Header = () => {
 					</span>{" "}
 					Light
 				</div>
-			</div>
 		</>
   );
 }

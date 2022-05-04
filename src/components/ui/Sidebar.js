@@ -1,7 +1,7 @@
 import avatar from '../../assets/images/avatar.png';
 export const Sidebar = () => {
   return (
-		<div className="sidebar__container">
+		<>
 			<div className="sidebar__header">
 				<div className="sidebar__header__avatar">
 					<img src={avatar} alt="" />
@@ -42,6 +42,6 @@ export const Sidebar = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</>
   );
 }

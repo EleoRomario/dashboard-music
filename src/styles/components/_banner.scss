@@ -1,0 +1,33 @@
+.banner{
+  background-color: #16a085;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: #fff;
+  display: flex;
+  height: 20rem;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1abc9c;
+    z-index: -1;
+    clip-path: circle(80% at 100% 50%);
+  }
+  &__info{
+
+  }
+  &__img{
+    img{
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+}
