@@ -1,12 +1,26 @@
 // Colors
-$color_bg: #1c1f28;
-$color_bg_alt: #262c3a;
-$color_text: #ffffff;
-$color_text_alt: #545565;
-$color_red: #fb415e;
+:root{
+  --color-bg: #e5e7e7;
+  --color-bg-alt: #f3f1f1;
+  --color-text: #333;
+  --color-text-alt: #666;
+}
+  $color_bg: var(--color-bg);
+  $color_bg_alt: var(--color-bg-alt);
+  $color_text: var(--color-text);
+  $color_text_alt: var(--color-text-alt);
+  $color_red: #fb415e;
+  
+  // Widths and heights
+  $width_sidebar: 14rem;
+  $height_header: 5rem;
+  
+  $section: 46rem;
 
-// Widths and heights
-$width_sidebar: 14rem;
-$height_header: 5rem;
-
-$section: 46rem;
+body.darkTheme {
+	// Colors
+	--color-bg: #1c1f28;
+	--color-bg-alt: #262c3a;
+	--color-text: #ffffff;
+	--color-text-alt: #545565;
+}

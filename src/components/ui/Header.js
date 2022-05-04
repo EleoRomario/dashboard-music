@@ -1,4 +1,18 @@
+import { useState } from "react";
+
 export const Header = () => {
+	const [bg, setBg] = useState({
+		text: "light",
+		icon: "sunny",
+	});
+
+	const changeBg = () => {
+		document.body.classList.toggle("darkTheme");
+		document.body.classList.contains("darkTheme")
+			? setBg({ text: "light", icon: "sunny" })
+			: setBg({ text: "dark", icon: "moon" });
+	}
+	const { text, icon } = bg;
 	return (
 		<div className="header-container">
 			<div className="header__navegation">
@@ -25,11 +39,11 @@ export const Header = () => {
 				</div>
 				<span className="point__notification"></span>
 			</div>
-			<div className="header__bgbutton">
+			<div className="header__bgbutton" onClick={changeBg}>
 				<span className="icon">
-					<ion-icon name="sunny-outline"></ion-icon>
+					<ion-icon name={`${icon}-outline`}></ion-icon>
 				</span>{" "}
-				Light
+				{text}
 			</div>
 		</div>
 	);

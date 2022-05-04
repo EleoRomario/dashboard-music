@@ -26,9 +26,8 @@ body {
 	border-radius: 0.5rem;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background-color: grayscale($color_bg);
+	background-color: $color_bg;
 }
-
 // Layout
 .layout {
 	display: grid;

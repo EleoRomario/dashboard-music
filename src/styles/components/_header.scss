@@ -40,8 +40,12 @@
 	justify-content: space-evenly;
 	color: $color_text;
 	width: calc(#{$width_sidebar} - 4rem);
+	user-select: none;
 	.icon {
 		margin-right: 0;
+	}
+	&:hover{
+		cursor: pointer;
 	}
 }
 .header__notification {
