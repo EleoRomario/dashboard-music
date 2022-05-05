@@ -2,9 +2,11 @@
 	background-color: $color_bg_alt;
 	border-radius: 2rem;
 	width: $width_sidebar;
-	height: calc(100vh - 4rem);
+	height: max-content;
 	padding: 2rem;
-	position: fixed;
+	position: sticky;
+	top: 2rem;
+	left: 2rem;
 }
 .sidebar__header {
 	margin-bottom: 2rem;
